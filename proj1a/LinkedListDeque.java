@@ -128,7 +128,7 @@ public class LinkedListDeque<T> {
      * @return
      */
     public T removeFirst() {
-        if (sentinel.next == null)
+        if (sentinel.next == sentinel)
             return null;
 
         Node removedNode = sentinel.next;
@@ -146,7 +146,7 @@ public class LinkedListDeque<T> {
      * @returnx
      */
     public T removeLast() {
-        if (sentinel.prev == null)
+        if (sentinel.prev == sentinel)
             return null;
 
         Node removedNode = sentinel.prev;
